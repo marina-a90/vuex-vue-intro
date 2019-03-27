@@ -4,6 +4,7 @@
         <div>from the component directly: {{ count }}</div>
         <div>from mapGetters: {{ safelyStoredNumber }}</div>
         <div><button @click.prevent="incrementStoredNumber">Click me</button></div>
+        <input v-model="inputValue" @keyup.enter="setStoredNumber(inputValue)"/>
     </div>
 </template>
 
@@ -13,7 +14,8 @@ import { mapGetters, mapMutations } from 'vuex'
 export default {
     data() {
         return {
-            count: 0
+            count: 0, 
+            inputValue: ''
         }
     }, 
     methods: {
