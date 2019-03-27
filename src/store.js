@@ -8,6 +8,6 @@ export const store = new Vuex.Store({
         safelyStoredNumber: 0
     }, 
     getters: {
-        safelyStoredNumber: state => satte.safelyStoredNumber
+        safelyStoredNumber: state => state.safelyStoredNumber
     }
 });
