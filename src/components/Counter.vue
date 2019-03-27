@@ -34,7 +34,7 @@ export default {
         ...mapActions([
             //ime mutacije
             'incrementStoredNumber',
-            'setStoredNumber'
+            'setStoredNumber',
             //mutacije su funkcije
         ])
     }, 

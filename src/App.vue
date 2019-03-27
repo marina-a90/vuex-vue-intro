@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="cat not loaded :(" src="./assets/cat.jpg" height="100px">
     <counter/>
+    <new-component/>
   </div>
 </template>
 
 <script>
 import Counter from './components/Counter.vue'
+import NewComponent from './components/NewComponent.vue'
 
 export default {
   name: 'app',
   components: {
-    Counter
+    Counter,
+    NewComponent
   }
 }
 </script>

@@ -24,6 +24,9 @@ export const store = new Vuex.Store({
         },
         setStoredNumber(state, newNumber) {
             state.commit('setStoredNumber', newNumber)
+        }, 
+        mojaPrvaAkcija(state) {
+            //radi nesto
         }
     }
 });
