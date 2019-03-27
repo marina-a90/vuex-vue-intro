@@ -9,5 +9,13 @@ export const store = new Vuex.Store({
     }, 
     getters: {
         safelyStoredNumber: state => state.safelyStoredNumber
+    }, 
+    mutations: {
+        incrementStoredNumber(state) {
+            state.safelyStoredNumber++;
+        }, 
+        setStoredNumber(state, newNumber) {
+            state.safelyStoredNumber = newNumber;
+        }
     }
 });

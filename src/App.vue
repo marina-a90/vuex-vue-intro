@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="cat not loaded :(" src="./assets/cat.jpg" height="100px">
     <counter/>
   </div>
 </template>

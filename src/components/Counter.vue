@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Counter Component</h1>
-        <div>{{ count }}</div>
+        <div>from the component directly: {{ count }}</div>
         <div>from mapGetters: {{ safelyStoredNumber }}</div>
     </div>
 </template>
