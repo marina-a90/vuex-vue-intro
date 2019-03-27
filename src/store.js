@@ -17,5 +17,13 @@ export const store = new Vuex.Store({
         setStoredNumber(state, newNumber) {
             state.safelyStoredNumber = newNumber;
         }
+    }, 
+    actions: {
+        incrementStoredNumber(state) {
+            state.commit('incrementStoredNumber')
+        },
+        setStoredNumber(state, newNumber) {
+            state.commit('setStoredNumber', newNumber)
+        }
     }
 });

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
+import { mapGetters, mapMutations, mapActions } from 'vuex'
 
 export default {
     data() {
@@ -24,14 +24,23 @@ export default {
         }, 
 
         //spread operator!!!
-        ...mapMutations([
+        //u nizu!
+        // ...mapMutations([
+        //     //ime mutacije
+        //     'incrementStoredNumber',
+        //     'setStoredNumber'
+        //     //mutacije su funkcije
+        // ])
+        ...mapActions([
             //ime mutacije
             'incrementStoredNumber',
             'setStoredNumber'
+            //mutacije su funkcije
         ])
     }, 
     computed: {
         //spread operator!!!
+        //u nizu!
         ...mapGetters([
             // ime gettera 
             'safelyStoredNumber'
